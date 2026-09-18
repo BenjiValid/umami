@@ -13,3 +13,7 @@ env:
     secret: APP_SECRET
     availability:
       - RUNTIME
+  - variable: SKIP_DB_CHECK
+    value: "1"
+    availability:
+      - BUILD
