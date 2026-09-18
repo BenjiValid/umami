@@ -1,0 +1,15 @@
+﻿runConfig:
+  cpu: 1
+  memoryMiB: 512
+  minInstances: 0
+
+env:
+  - variable: DATABASE_URL
+    secret: DATABASE_URL
+    availability:
+      - BUILD
+      - RUNTIME
+  - variable: APP_SECRET
+    secret: APP_SECRET
+    availability:
+      - RUNTIME
